@@ -1,0 +1,44 @@
+* {
+    margin:0;
+}
+
+/* Navigation Bar */
+.navBar{
+    width: auto;
+    height: 100px;
+    background-color: #3C3B3B;
+    padding-top: 48px;
+    padding-left: 42%;
+    color: white;
+    font-family: 'Saira';
+    font-size: 22px;
+    font-weight: 900;
+}
+
+/* Page Navigation Buttons */ 
+.pageSelection{
+    margin-top: 13%;
+    margin-left: 38%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.pageSelection button{
+    margin-bottom: 50px;
+    padding: 8px;
+    border-radius: 30px;
+    border-color: white;    
+    box-shadow: none;
+    background-color: #535353;
+    color: white;
+    font-family: 'Saira';
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.pageSelection button:hover{
+    background-color:#000000;
+}
+
