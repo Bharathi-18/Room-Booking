@@ -19,7 +19,7 @@
 
     <div class="pageSelection">
         <button onclick="navigateToViewRoom()">VIEW ROOMS.....</button>
-        <button>FIND ROOMS.....</button>
+        <button>BOOK ROOMS.....</button>
     </div>
 </body>
 
