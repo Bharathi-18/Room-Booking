@@ -16,7 +16,7 @@
 }
 
 button {
-    position:relative;
+    position: relative;
     margin-top: 18px;
     margin-left: 10px;
     padding: 8px;
@@ -35,7 +35,7 @@ button {
     background-color: #000000;
 }
 
-.room{
+.room {
     margin-top: -4.4%;
     padding-top: 18px;
     padding-left: 45.8%;
@@ -46,34 +46,34 @@ button {
 }
 
 
-.availableRooms{
-    display: flex;
+.availableRooms {
     margin-top: 6%;
     margin-left: 6%;
-    width: 1200px;
+    width: 1430px;
     /* position: relative; */
 }
 
-.card{
+.card {
     margin-right: 8%;
     background-color: #434242;
-    width: 400px;
-    height: 300px;
+    max-width: 1430px;
+    max-height: 700px;
     padding-top: 10px;
-    
+
 }
 
-.inner-card{
+.inner-card {
     background-color: #a0a0a0;
-    width: 360px;
-    height: 200px;
+    max-width: 1380px;
+    max-height: 460px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
+    font-family: 'Saira';
     /* margin-top: px; */
 }
 
-.roomname{
+.roomname {
     margin-left: 36%;
     margin-top: 6%;
     color: white;
@@ -81,10 +81,7 @@ button {
     letter-spacing: 1px;
 }
 
-.listOfAppointments{
+.listOfAppointments {
     font-family: 'Saira';
 }
 
-#enableHover:hover{
-    cursor:pointer;
-}
