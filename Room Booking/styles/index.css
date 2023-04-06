@@ -2,43 +2,120 @@
     margin:0;
 }
 
+body{
+    /* background-color: #2b6777; */
+}
+
 /* Navigation Bar */
 .navBar{
-    width: auto;
-    height: 100px;
-    background-color: #3C3B3B;
-    padding-top: 48px;
-    padding-left: 42%;
-    color: white;
+    display: flex;
+    /* width: auto; */
+    height: 65px;
+    background-color: #ffffff;
+    padding-top: 10px;
+    /* padding-left: 40%; */
+    padding-bottom: 18px;
+    color: rgb(0, 0, 0);
     font-family: 'Saira';
     font-size: 22px;
     font-weight: 900;
 }
 
+.logo{
+    margin-top: -1.5%;
+    margin-left: 1%;
+    width: 110px;
+    height: 100px;
+}
+
+
+.exploreRoom{
+    height: 10px;
+    margin-left: 40%;
+}
+
+.webTitle {
+    margin-top: 5px;
+    margin-left: 2%;
+}
+
+.webTitle:hover{
+    cursor: default;
+}
+
 /* Page Navigation Buttons */ 
-.pageSelection{
+/* .pageSelection{
     margin-top: 13%;
     margin-left: 38%;
     display: flex;
     flex-direction: column;
     width: 400px;
-}
+} */
 
-.pageSelection button{
-    margin-bottom: 50px;
-    padding: 8px;
-    border-radius: 30px;
+.exploreRoom button{
+    margin-left: 27px;
+    padding: 16px;
+    margin-top:5px;
+    border-radius: 20px;
     border-color: white;    
     box-shadow: none;
-    background-color: #535353;
-    color: white;
+    background-color: #52ab98;
+    color:white;
     font-family: 'Saira';
     font-weight: 900;
     letter-spacing: 3px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
-.pageSelection button:hover{
-    background-color:#000000;
+button:hover{
+    cursor: pointer;
 }
 
+.roomImage{
+    /* margin-top: -33.47%; */
+    display: relative;
+    background-color: #c8d8e4;
+    min-height: auto;
+    width: 70%;
+    align-items: center;
+    /* margin-left: 50%; */
+}
+
+.roomBkImge{
+    width: 600px;
+    height: 400px;
+    padding-top: 142px;
+    padding-left: 100px;
+    padding-bottom: 140px; 
+    padding-right: 100px;
+    filter:brightness(80%);
+    /* border-radius: 300px; */
+}
+
+.content{
+    display: flex;
+    position: relative;
+    align-content: center;
+    cursor: default;    
+}
+
+.introContent{
+    font-family: 'Saira';
+    color: #c8d8e4;
+    background-color: #2b6777;
+    width: 75%;
+}
+
+.content-title{
+    color: #dcedfb;
+    width: 550px;
+    padding-top: 20%;
+    padding-left: 5%;
+    text-align: justify;
+}
+
+.content-text{
+    width:550px;
+    padding-left: 5%;
+    text-align: justify;
+}
