@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-body{
+body {
     background-color: #2b6777;
 }
 
@@ -19,6 +19,7 @@ body{
     font-size: 22px;
     font-weight: 900;
 }
+
 .logo {
     margin-top: -1.5%;
     margin-left: 1%;
@@ -26,27 +27,33 @@ body{
     height: 100px;
 }
 
-.content{
+.content {
     margin-top: 5%;
 }
-.logo:hover{
+
+.logo:hover {
     cursor: pointer;
 }
+
 .webTitle {
     margin-top: 5px;
     margin-left: 1.5%;
     cursor: pointer;
-    width:fit-content ;
+    width: fit-content;
 }
 
-button{
+button {
     margin-left: 50%;
-    padding: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 5px;
-    border-radius: 20px;
+    border-radius: 25px;
     border-color: white;
     box-shadow: none;
-    background-color: #52ab98;
+    /* background-color: #52ab98; */
+    background-color: #2b6777;
     color: white;
     font-family: 'Saira';
     font-weight: 900;
@@ -54,7 +61,7 @@ button{
     font-size: 14px;
 }
 
-.room{
+.room {
     margin-top: -4.4%;
     padding-top: 18px;
     padding-left: 45.8%;
@@ -65,22 +72,22 @@ button{
     cursor: default;
 }
 
-.availableRooms{
+.availableRooms {
     display: flex;
     margin-top: 6%;
     margin-left: 6%;
-    width: 1200px;
+    width: 1300px;
 }
 
-.card{
-    margin-right: 8%;
+.card {
+    margin-right: 1%;
     background-color: #2a464e;
-    width: 400px;
-    height: 300px;
+    width: 1400px;
+    height: 530px;
     padding-top: 10px;
 }
 
-.inner-card{
+.inner-card {
     background-color: #c8d8e4;
     width: 360px;
     height: 200px;
@@ -90,19 +97,19 @@ button{
     color: #0a303b;
 }
 
-.roomname{
-    margin-left: 36%;
-    margin-top: 6%;
+.roomname {
+    margin-left: 49%;
+    margin-top: 25%;
     color: #c8d8e4;
     font-family: 'Saira';
     letter-spacing: 1px;
     font-weight: bold;
 }
 
-.listOfAppointments{
+.listOfAppointments {
     font-family: 'Saira';
 }
 
-#enableHover:hover{
-    cursor:pointer;
+#enableHover:hover {
+    cursor: pointer;
 }

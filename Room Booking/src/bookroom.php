@@ -32,59 +32,59 @@
             </form>
             <?php
 
-            $dat = $_POST['dat'];
-            $fromTime = $_POST['fromTime'];
-            $toTime = $_POST['toTime'];
+            // $dat = $_POST['dat'];
+            // $fromTime = $_POST['fromTime'];
+            // $toTime = $_POST['toTime'];
 
-            if ($dat != "" && $fromTime != "" && $toTime != "") {
+            // if ($dat != "" && $fromTime != "" && $toTime != "") {
 
-                $explodeFromTime = explode($fromTime, ":");
-                $explodeToTime = explode($toTime, ":");
+            //     $explodeFromTime = explode($fromTime, ":");
+            //     $explodeToTime = explode($toTime, ":");
 
-                $time1 = (int)$explodeFromTime[0] * 60 + (int)$explodeFromTime[1];
-                $time2 = (int)$explodetoTime[0] * 60 + (int)$explodeToTime[1];
+            //     $time1 = (int)$explodeFromTime[0] * 60 + (int)$explodeFromTime[1];
+            //     $time2 = (int)$explodetoTime[0] * 60 + (int)$explodeToTime[1];
 
-                $diffTime = $time2 - $time1;
+            //     $diffTime = $time2 - $time1;
 
-                $explodeDate = explode($dat, "/");
-                $dateVal = $explodeDate[2] . "-" . $explodeDate[1] . "-" . $explodeDate[0];
-                $fromTime .= ":00";
-                $toTime .= ":00";
+            //     $explodeDate = explode($dat, "/");
+            //     $dateVal = $explodeDate[2] . "-" . $explodeDate[1] . "-" . $explodeDate[0];
+            //     $fromTime .= ":00";
+            //     $toTime .= ":00";
 
-                $host = "localhost";
-                $user = "root";
-                $pass = "";
-                $db = "roombooking";
-                $conn = new mysqli($host, $user, $pass, $db);
-                $query = "SELECT * FROM roomsdetails";
-                $result = $conn->query($query);
-                $count = 0;
-                $flag = 0;
-                $roomArr = [];
-                if ($result == true) {
-                    if ($result->num_rows > 0) {
-                        while ($rslt = mysqli_fetch_assoc($result)) {
+            //     $host = "localhost";
+            //     $user = "root";
+            //     $pass = "";
+            //     $db = "roombooking";
+            //     $conn = new mysqli($host, $user, $pass, $db);
+            //     $query = "SELECT * FROM roomsdetails";
+            //     $result = $conn->query($query);
+            //     $count = 0;
+            //     $flag = 0;
+            //     $roomArr = [];
+            //     if ($result == true) {
+            //         if ($result->num_rows > 0) {
+            //             while ($rslt = mysqli_fetch_assoc($result)) {
 
-                            $query = "SELECT * FROM " . $rslt['roomName'] . " WHERE DAT = " . $dateVal . " and fromTime > " . $toTime . " and totime > " . $fromTime;
-                            $result1 = $conn->query($query);
-                            if (
-                                $result1 == true && $result1->num_rows > 0
-                            ) {
-                                $flag = 1;
-                            }
+            //                 $query = "SELECT * FROM " . $rslt['roomName'] . " WHERE DAT = " . $dateVal . " and fromTime > " . $toTime . " and totime > " . $fromTime;
+            //                 $result1 = $conn->query($query);
+            //                 if (
+            //                     $result1 == true && $result1->num_rows > 0
+            //                 ) {
+            //                     $flag = 1;
+            //                 }
 
-                            if ($flag == 0) {
-                                $roomArr[$count++] = $rslt['roomName'];
-                            }
-                            $flag = 0;
-                        }
-                    }
-                }
+            //                 if ($flag == 0) {
+            //                     $roomArr[$count++] = $rslt['roomName'];
+            //                 }
+            //                 $flag = 0;
+            //             }
+            //         }
+            //     }
 
-                foreach ($roomArr as $rm) {
-                    echo $rm;
-                }
-            }
+            //     foreach ($roomArr as $rm) {
+            //         echo $rm;
+            //     }
+            // }
             ?>
 
             </tr>

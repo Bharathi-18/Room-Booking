@@ -40,7 +40,7 @@
                         echo "<div class=\"availableRooms\">";
                     }
 
-                    if ($count != 0 && $count % 3 == 0) {
+                    if ($count != 0 && $count % 1 == 0) {
                         echo    "</div><br><br><div class=\"availableRooms\">";
                     }
                     $query = "SELECT * FROM " . $rslt['roomName'] . " ORDER BY dat, fromTime";
