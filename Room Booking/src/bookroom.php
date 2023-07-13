@@ -8,6 +8,8 @@
     <title>Book Room</title>
     <link href='https://fonts.googleapis.com/css?family=Saira' rel='stylesheet'>
     <link rel="stylesheet" href="../styles/bookroom.css">
+    <script src="../script/index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,12 +26,39 @@
                 <table>
                     <tr>
                         <td>DATE</td>
-                        <td><input type="date" name="dat" id="dat"></td>
-                        <td>FROM</td>
-                        <td><input type="time" name="fromTime" id="fromTime"></td>
+                        <td class="date-and-time"><input type="date" name="dat" id="dateInput"></td>
+                        <td> FROM</td>
+                        <td class="date-and-time"><input type="time" name="fromTime" id="fromtimeInput"></td>
                         <td>TO</td>
-                        <td><input type="time" name="toTime" id="toTime"></td>
+                        <td class="date-and-time"><input type="time" name="toTime" id="totimeInput"></td>
+                        <td class="date-and-time"><input type="button" name="search" id="searchButton" onclick="enableInput()" value="search"></td>
+                    </tr>
+                </table>
+                <table class="meetdetails" style="margin-top:5%;padding-left: 5%;">
+                    <tr>
+                        <td>Available Room(s)</td>
+                        <td id="textinput"><select name="roomname" id="roomname" style="width: 180px;" disabled>
+                                <option value="" disabled selected hidden>choose room</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Meet Name</td>
+                        <td id="textinput"><input type="text" name="meetname" id="meetname" style="width: 380px;" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td id="textinput"><input type="text" name="description" id="description" style="width: 380px;" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>No Of Persons</td>
+                        <td id="textinput"><input type="text" name="meetname" id="noofprsn" style="width: 380px;" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="submitButton" onclick="createMeet()" value="Create"></td>
+                    </tr>
+                </table>
             </form>
+
             <?php
 
             // $dat = $_POST['dat'];

@@ -14,13 +14,12 @@
 <body>
     <nav class="navBar">
         <img class="logo" src="../images/logo.jpeg" alt="logo">
-        <h1 class="webTitle">MEET ROOM BOOKING</h1>
+        <h1 class="weuubTitle">MEET ROOM BOOKING</h1>
         <div class="exploreRoom">
             <button onclick="navigateToViewRoom()">VIEW ROOMS</button>
-            <button>BOOK ROOMS</button>
+            <button onclick="navigateToBookRoom()">BOOK ROOMS</button>
         </div>
     </nav>
-
     <div class="content">
         <div class="introContent">
             <h2 class="content-title">Welcome to our office's meeting room booking website, designed to help you streamline your scheduling needs and optimize your office's efficiency</h2><br>
