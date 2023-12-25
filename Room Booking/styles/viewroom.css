@@ -72,21 +72,21 @@ button {
     /* display: flex; */
     margin-top: 6%;
     margin-left: 6%;
-    width: 1300px;
+    width: 400px;
     height: 600px;
 }
 
 .card {
     margin-right: 8%;
     background-color: #2a464e;
-    width: 1300px;
-    height: 550px;
+    width: 420px;
+    height: 350px;
     padding-top: 10px;
 }
 
 .inner-card {
     background-color: #c8d8e4;
-    width: 460px;
+    width: 380px;
     height: 260px;
     margin-left: 10px;
     margin-right: 10px;

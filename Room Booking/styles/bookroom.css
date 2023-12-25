@@ -58,6 +58,10 @@ button {
     font-size: 14px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 table{
 
     margin-left: 25%;
@@ -103,7 +107,7 @@ td{
   /* Custom styles for the search button */
   padding: 8px 12px;
   background-color: #ffffff;
-  color: #52ab98;
+  color: black;
   border: none;
   border-radius: 4px;
   font-family: Arial, sans-serif;

@@ -14,7 +14,7 @@
 <body>
     <nav class="navBar">
         <img class="logo" src="../images/logo.jpeg" alt="logo">
-        <h1 class="weuubTitle">MEET ROOM BOOKING</h1>
+        <h1 class="weuubTitle">MEETING ROOM BOOKING</h1>
         <div class="exploreRoom">
             <button onclick="navigateToViewRoom()">VIEW ROOMS</button>
             <button onclick="navigateToBookRoom()">BOOK ROOMS</button>

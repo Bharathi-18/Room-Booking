@@ -20,7 +20,7 @@ if ($result == true) {
     if ($result->num_rows > 0) {
         while ($rslt = mysqli_fetch_assoc($result)) {
 
-            $sub_query = "SELECT COUNT(*) as CNT FROM " . $rslt["roomName"] . " WHERE dat = '" . $dat . "' and ((fromTime <= '" . $from_Time . "' and  toTime >= '" . $from_Time . "'))";
+            $sub_query = "SELECT COUNT(*) as CNT FROM " . $rslt["roomName"] . " WHERE (dat = '" . $dat . "' and ((fromTime <= '" . $from_Time . "' and  toTime >= '" . $from_Time . "') or (fromTime <= '" . $to_Time . "' and  toTime >= '" . $to_Time . "') ))";
 
             $subquery_result = $conn->query($sub_query);
 

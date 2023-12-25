@@ -23,7 +23,7 @@
     <nav class="navBar">
         <img class="logo" onclick="navigateBack()" src="../images/logo.jpeg" alt="back">
         <h1 class="webTitle" onclick="navigateBack()">MEET ROOM BOOKING</h1>
-        <button>BOOK ROOMS</button>
+        <button onclick="navigateToBookRoom()">BOOK ROOMS</button>
     </nav>
     <div class="content">
         <div class="room">
@@ -48,7 +48,7 @@
                         echo "<div class=\"availableRooms\">";
                     }
 
-                    if ($count != 0 && $count % 1 == 0) {
+                    if ($count != 0 && $count % 3 == 0) {
                         echo    "</div><br><br><div class=\"availableRooms\">";
                     }
                     $query = "SELECT * FROM " . $rslt['roomName'] . " ORDER BY dat, fromTime";

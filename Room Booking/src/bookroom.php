@@ -16,7 +16,7 @@
 
     <nav class="navBar">
         <img class="logo" onclick="navigateBack()" src="../images/logo.jpeg" alt="back">
-        <h1 class="webTitle" onclick="navigateBack()">MEET ROOM BOOKING</h1>
+        <h1 class="webTitle" onclick="navigateBack()">MEETING ROOM BOOKING</h1>
         <button onclick="navigateToViewRoom()">VIEW ROOMS</button>
     </nav>
 
@@ -31,6 +31,7 @@
                         <td class="date-and-time"><input type="time" name="fromTime" id="fromtimeInput"></td>
                         <td>TO</td>
                         <td class="date-and-time"><input type="time" name="toTime" id="totimeInput"></td>
+
                         <td class="date-and-time"><input type="button" name="search" id="searchButton" onclick="enableInput()" value="search"></td>
                     </tr>
                 </table>
